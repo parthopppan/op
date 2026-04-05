@@ -90,7 +90,7 @@ export default function SensorPage() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            🔧 Admin Panel
+            
           </motion.button>
         </Link>
       </motion.div>
