@@ -84,15 +84,6 @@ export default function SensorPage() {
           </h1>
           <p className="text-foreground/50 mt-1">Real-time air quality sensor readings</p>
         </div>
-        <Link href="/sensor/admin">
-          <motion.button
-            className="px-6 py-3 rounded-xl glass border border-neon-purple/30 text-neon-purple font-medium text-sm hover:bg-neon-purple/10 transition"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            
-          </motion.button>
-        </Link>
       </motion.div>
 
       <AnimatePresence mode="wait">
@@ -214,7 +205,7 @@ export default function SensorPage() {
                 <p className="text-foreground/40">Air Quality Index</p>
                 <p className="text-foreground/20 text-xs mt-4">
                   Last updated: {new Date(data.timestamp).toLocaleTimeString()} •
-                  Source: {data.updatedBy === "admin" ? "🔧" : "System"}
+                  Source: {data.updatedBy === "admin" ? "🔧 Admin Panel" : "System"}
                 </p>
               </div>
             </GlassCard>
