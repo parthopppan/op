@@ -214,7 +214,7 @@ export default function SensorPage() {
                 <p className="text-foreground/40">Air Quality Index</p>
                 <p className="text-foreground/20 text-xs mt-4">
                   Last updated: {new Date(data.timestamp).toLocaleTimeString()} •
-                  Source: {data.updatedBy === "admin" ? "🔧 Admin Panel" : "System"}
+                  Source: {data.updatedBy === "admin" ? "🔧" : "System"}
                 </p>
               </div>
             </GlassCard>
