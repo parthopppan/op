@@ -32,6 +32,31 @@ export const CITIES = [
   { name: 'Paris', lat: 48.8566, lng: 2.3522, country: 'France', aqi: 48, description: 'Diesel bans and cycling infrastructure' },
 ] as const;
 
+// ─── India Regional Data for Heatmap ─────────────────────
+export const INDIA_REGIONS = [
+  { name: 'Delhi NCR (Central)', pincode: '110001', lat: 28.6139, lng: 77.209, aqi: 350, description: 'Severe core. High traffic & stubble burning.' },
+  { name: 'Delhi (Narela)', pincode: '110040', lat: 28.8428, lng: 77.0926, aqi: 410, description: 'Industrial severe zone.' },
+  { name: 'Gurugram', pincode: '122001', lat: 28.4595, lng: 77.0266, aqi: 320, description: 'High vehicle emissions.' },
+  { name: 'Noida', pincode: '201301', lat: 28.5355, lng: 77.3910, aqi: 330, description: 'Construction dust and traffic.' },
+  { name: 'Amritsar', pincode: '143001', lat: 31.6340, lng: 74.8723, aqi: 280, description: 'Agricultural residue burning.' },
+  { name: 'Lucknow', pincode: '226001', lat: 26.8467, lng: 80.9462, aqi: 250, description: 'Poor ventilation, high dust.' },
+  { name: 'Patna', pincode: '800001', lat: 25.5941, lng: 85.1376, aqi: 290, description: 'High PM2.5 from brick kilns.' },
+  { name: 'Kolkata', pincode: '700001', lat: 22.5726, lng: 88.3639, aqi: 180, description: 'Traffic congestion smog.' },
+  { name: 'Mumbai (Bandra)', pincode: '400050', lat: 19.0596, lng: 72.8295, aqi: 150, description: 'Coastal breeze helps, but heavy traffic.' },
+  { name: 'Mumbai (Navi)', pincode: '400703', lat: 19.0330, lng: 73.0297, aqi: 170, description: 'Industrial zone outputs.' },
+  { name: 'Pune', pincode: '411001', lat: 18.5204, lng: 73.8567, aqi: 120, description: 'Moderate valley pollution.' },
+  { name: 'Bangalore (Urban)', pincode: '560001', lat: 12.9716, lng: 77.5946, aqi: 90, description: 'Traffic bottleneck but green cover.' },
+  { name: 'Bangalore (Whitefield)', pincode: '560066', lat: 12.9698, lng: 77.7499, aqi: 110, description: 'Tech park congestion.' },
+  { name: 'Chennai', pincode: '600001', lat: 13.0827, lng: 80.2707, aqi: 85, description: 'Coastal air dispersion.' },
+  { name: 'Hyderabad', pincode: '500001', lat: 17.3850, lng: 78.4867, aqi: 105, description: 'Moderate traffic emissions.' },
+  { name: 'Ahmedabad', pincode: '380001', lat: 23.0225, lng: 72.5714, aqi: 190, description: 'Industrial city smog.' },
+  { name: 'Jaipur', pincode: '302001', lat: 26.9124, lng: 75.7873, aqi: 160, description: 'Dust storms + traffic.' },
+  { name: 'Shimla', pincode: '171001', lat: 31.1048, lng: 77.1734, aqi: 35, description: 'Clean Himalayan air.' },
+  { name: 'Ooty', pincode: '643001', lat: 11.4102, lng: 76.6950, aqi: 25, description: 'Pristine forest areas.' },
+  { name: 'Guwahati', pincode: '781001', lat: 26.1158, lng: 91.7086, aqi: 130, description: 'Valley trapped emissions.' },
+  { name: 'Kochi', pincode: '682001', lat: 9.9312, lng: 76.2673, aqi: 45, description: 'Good coastal air quality.' },
+] as const;
+
 // ─── Education Content ───────────────────────────────────
 export const SMOG_DEFINITION = {
   title: 'What is Photochemical Smog?',
